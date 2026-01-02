@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 
-  // Mobile dropdown toggle
+  // Mobile dropdown toggle - prevent default to show dropdown instead of navigating
   if (hasDropdown) {
       servicesLink.addEventListener('click', function(e) {
           if (window.innerWidth <= 1050) {
@@ -53,6 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
               if (dropdownMenu) {
                   dropdownMenu.style.display = hasDropdown.classList.contains('active') ? 'block' : 'none';
               }
+          }
+          // On desktop, also prevent default to maintain dropdown functionality
+          // If user wants main services page, they can use "View All Services" in dropdown
+          else {
+              e.preventDefault();
           }
       });
   }
