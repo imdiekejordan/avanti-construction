@@ -120,7 +120,7 @@
   </header>
   <section id="hero">
     <div class="hero-left">
-      <img class="hero-left-bg" src="/images/hero-marble.png" alt="Background Marble" />
+      <img class="hero-left-bg" src="/images/hero/hero-marble.jpg" alt="Background Marble" />
       <div class="hero-categories">CONSTRUCTION · DESIGN · MANAGEMENT</div>
       <h1 class="hero-title">Imagination Meets<br>Reality In Design</h1>
       <p class="hero-description">Welcome to Avanti Construction, your ultimate destination for transforming spaces into captivating works of art.</p>
@@ -136,13 +136,23 @@
       </a>
     </div>
     <div class="hero-right">
-      <img class="hero-image" src="/images/hero-image.png" alt="Modern interior design" />
+      <picture class="hero-image">
+        <source media="(max-width: 425px)" srcset="/images/hero/hero-image-425.jpg">
+        <source media="(max-width: 768px)" srcset="/images/hero/hero-image-768.jpg">
+        <source media="(max-width: 1024px)" srcset="/images/hero/hero-image-1024.jpg">
+        <source media="(min-width: 1024px)" srcset="/images/hero/hero-image-1440.jpg">
+        <img aria-hidden="true" loading="eager" decoding="async" src="/images/hero/hero-image-1440.jpg" alt="Modern Interior Design" width="648" height="577">
+      </picture>
     </div>
   </section>
   <section id="about">
     <div class="containter about-content-wrapper">
       <div class="about-images">
-        <img src="/images/about-image.png" alt="About Avanti Construction" class="about-main-img" />
+        <picture>
+          <source media="(max-width: 425px)" srcset="/images/about/about-image-m.jpg">
+          <source media="(min-width: 426px)" srcset="/images/about/about-image.jpg">
+          <img src="/images/about/about-image.jpg" alt="About Avanti Construction" class="about-main-img" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="about-text">
         <span class="pretitle">About Us</span>
@@ -166,8 +176,8 @@
                 <a class="service-card-link" href="/services/home-renovation.html">
                     <div class="service-image-container">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="/images/home-renovation/main-home-renovation.jpg">
-                            <source media="(min-width: 769px)" srcset="/images/home-renovation/main-home-renovation.jpg">
+                            <source media="(max-width: 425px)" srcset="/images/home-renovation/main-home-renovation-m.jpg">
+                            <source media="(min-width: 426px)" srcset="/images/home-renovation/main-home-renovation.jpg">
                             <img class="service-image" src="/images/home-renovation/main-home-renovation.jpg" alt="Home Renovation" loading="lazy" decoding="async">
                         </picture>
                         <div class="service-title-bar">
@@ -190,8 +200,8 @@
                 <a class="service-card-link" href="/services/kitchen-renovation.html">
                     <div class="service-image-container">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="/images/kitchen-renovation/main-kitchen-renovation.jpg">
-                            <source media="(min-width: 769px)" srcset="/images/kitchen-renovation/main-kitchen-renovation.jpg">
+                            <source media="(max-width: 425px)" srcset="/images/kitchen-renovation/main-kitchen-renovation-m.jpg">
+                            <source media="(min-width: 426px)" srcset="/images/kitchen-renovation/main-kitchen-renovation.jpg">
                             <img class="service-image" src="/images/kitchen-renovation/main-kitchen-renovation.jpg" alt="Kitchen Renovation" loading="lazy" decoding="async">
                         </picture>
                         <div class="service-title-bar">
@@ -214,8 +224,8 @@
                 <a class="service-card-link" href="/services/bathroom-renovation.html">
                     <div class="service-image-container">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="/images/bathroom-renovation/main-bathroom-renovation.jpg">
-                            <source media="(min-width: 769px)" srcset="/images/bathroom-renovation/main-bathroom-renovation.jpg">
+                            <source media="(max-width: 425px)" srcset="/images/bathroom-renovation/main-bathroom-renovation-m.jpg">
+                            <source media="(min-width: 426px)" srcset="/images/bathroom-renovation/main-bathroom-renovation.jpg">
                             <img class="service-image" src="/images/bathroom-renovation/main-bathroom-renovation.jpg" alt="Bathroom Renovation" loading="lazy" decoding="async">
                         </picture>
                         <div class="service-title-bar">
@@ -238,8 +248,8 @@
                 <a class="service-card-link" href="/services/adu.html">
                     <div class="service-image-container">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="/images/adu/main-adu.jpg">
-                            <source media="(min-width: 769px)" srcset="/images/adu/main-adu.jpg">
+                            <source media="(max-width: 425px)" srcset="/images/adu/main-adu-m.jpg">
+                            <source media="(min-width: 426px)" srcset="/images/adu/main-adu.jpg">
                             <img class="service-image" src="/images/adu/main-adu.jpg" alt="ADU Construction" loading="lazy" decoding="async">
                         </picture>
                         <div class="service-title-bar">
@@ -262,8 +272,8 @@
                 <a class="service-card-link" href="/services/garage.html">
                     <div class="service-image-container">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="/images/garage-conversion/main-garage-conversion.jpg">
-                            <source media="(min-width: 769px)" srcset="/images/garage-conversion/main-garage-conversion.jpg">
+                            <source media="(max-width: 425px)" srcset="/images/garage-conversion/main-garage-conversion-m.jpg">
+                            <source media="(min-width: 426px)" srcset="/images/garage-conversion/main-garage-conversion.jpg">
                             <img class="service-image" src="/images/garage-conversion/main-garage-conversion.jpg" alt="Garage Construction" loading="lazy" decoding="async">
                         </picture>
                         <div class="service-title-bar">
@@ -286,8 +296,8 @@
                 <a class="service-card-link" href="/services/grading.html">
                     <div class="service-image-container">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="/images/grading/main-grading.jpg">
-                            <source media="(min-width: 769px)" srcset="/images/grading/main-grading.jpg">
+                            <source media="(max-width: 425px)" srcset="/images/grading/main-grading-m.jpg">
+                            <source media="(min-width: 426px)" srcset="/images/grading/main-grading.jpg">
                             <img class="service-image" src="/images/grading/main-grading.jpg" alt="Grading Services" loading="lazy" decoding="async">
                         </picture>
                         <div class="service-title-bar">
@@ -310,8 +320,8 @@
                 <a class="service-card-link" href="/services/foundation.html">
                     <div class="service-image-container">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="/images/foundation/main-foundation.jpg">
-                            <source media="(min-width: 769px)" srcset="/images/foundation/main-foundation.jpg">
+                            <source media="(max-width: 425px)" srcset="/images/foundation/main-foundation-m.jpg">
+                            <source media="(min-width: 426px)" srcset="/images/foundation/main-foundation.jpg">
                             <img class="service-image" src="/images/foundation/main-foundation.jpg" alt="Foundation Services" loading="lazy" decoding="async">
                         </picture>
                         <div class="service-title-bar">
@@ -334,8 +344,8 @@
                 <a class="service-card-link" href="/services/framing.html">
                     <div class="service-image-container">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="/images/framing/main-framing.jpg">
-                            <source media="(min-width: 769px)" srcset="/images/framing/main-framing.jpg">
+                            <source media="(max-width: 425px)" srcset="/images/framing/main-framing-m.jpg">
+                            <source media="(min-width: 426px)" srcset="/images/framing/main-framing.jpg">
                             <img class="service-image" src="/images/framing/main-framing.jpg" alt="Framing Services" loading="lazy" decoding="async">
                         </picture>
                         <div class="service-title-bar">
@@ -358,9 +368,9 @@
                 <a class="service-card-link" href="/services.html">
                     <div class="service-image-container">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="/images/service.png">
-                            <source media="(min-width: 769px)" srcset="/images/service.png">
-                            <img class="service-image" src="/images/service.png" alt="View All Services" loading="lazy" decoding="async">
+                            <source media="(max-width: 768px)" srcset="/images/services/service-m.jpg">
+                            <source media="(min-width: 769px)" srcset="/images/services/service.jpg">
+                            <img class="service-image" src="/images/services/service.jpg" alt="View All Services" loading="lazy" decoding="async">
                         </picture>
                         <div class="service-title-bar">
                             <span class="service-name">View All Services</span>
@@ -384,9 +394,11 @@
   <section id="cta">
     <div class="attention-background">
         <picture>
-            <source media="(max-width: 425px)" srcset="/images/hero-marble.png">
-            <source media="(min-width: 425px)" srcset="/images/hero-marble.png">
-            <img src="/images/hero-marble.png" alt="Marable Background" width="1920" height="1080" loading="lazy" decoding="async">
+            <source media="(max-width: 425px)" srcset="/images/cta/cta-marble-425.jpg">
+            <source media="(max-width: 768px)" srcset="/images/cta/cta-marble-768.jpg">
+            <source media="(max-width: 1024px)" srcset="/images/cta/cta-marble-1024.jpg">
+            <source media="(min-width: 1025px)" srcset="/images/cta/cta-marble-1440.jpg">
+            <img src="/images/cta/cta-marble-1440.jpg" alt="Marable Background" width="1440" height="350" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="container attention-flex">
@@ -430,6 +442,13 @@
     </div>
   </section>
   <section id="contact">
+    <div class="contact-background">
+      <picture>
+        <source media="(max-width: 425px)" srcset="/images/contact/index-contact-form-marble-m.jpg">
+        <source media="(min-width: 426px)" srcset="/images/contact/index-contact-form-marble.jpg">
+        <img src="/images/contact/index-contact-form-marble.jpg" alt="Contact Background" loading="eager" decoding="async">
+      </picture>
+    </div>
     <div class="contact-container">
       <div class="contact-eyebrow">Contact Us</div>
       <h2 class="contact-title">Would you like to start new project?<br>Get your free quote today!</h2>
@@ -485,7 +504,7 @@
           </div>
         </div>
         <div class="blog-card">
-          <img class="blog-card-img" src="/images/blog-images/structural-repairs-and-retrofits-to-protect-your-investment.png" alt="Structural Repairs and Retrofits">
+          <img class="blog-card-img" src="/images/blog-images/structural-repairs-and-retrofits-to-protect-your-investment.jpg" alt="Structural Repairs and Retrofits">
           <div class="blog-card-content">
             <div class="blog-card-meta-row">
               <span class="blog-card-meta">Structural Engineering</span>
@@ -502,11 +521,11 @@
   <section id="footer">
     <div class="footer-bg">
       <div class="footer-image">
-                        <picture>
-                    <source media="(max-width: 425px)" srcset="/images/footer-m.png">
-                    <source media="(min-width: 425px)" srcset="/images/footer.png">
-                    <img src="/images/footer.png" alt="Footer Background" loading="lazy" decoding="async">
-                </picture>
+        <picture>
+          <source media="(max-width: 425px)" srcset="/images/footer/footer-m.png">
+          <source media="(min-width: 425px)" srcset="/images/footer/footer.png">
+          <img src="/images/footer/footer.png" alt="Footer Background" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="footer-content">
         <div class="footer-left">
